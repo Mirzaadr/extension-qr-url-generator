@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+}
+
+canvas {
+  margin: 10px auto;
+}
+
+p {
+  font-size: 12px;
+  word-break: break-all;
+}

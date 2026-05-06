@@ -1,0 +1,65 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+*.zip
+*.crx
+*.xpi
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Coverage & testing
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+
+# Parcel / Vite / Webpack cache
+.cache/
+.parcel-cache/
+.vite/
+dist-ssr/
+
+# TypeScript (if used)
+*.tsbuildinfo
+
+# Extension-specific
+# Ignore key files used to sign extensions
+*.pem
+
+# Ignore packed extension artifacts
+web-ext-artifacts/
+
+# Optional: ignore local config overrides
+config.local.js
+
+# Mac resource fork files
+._*
+
+*.exclude
