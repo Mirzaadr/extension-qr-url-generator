@@ -1,8 +1,11 @@
 name: Build Extension
 
+permissions:
+  contents: write
+
 on:
   push:
-    branches: [ main ]
+    # branches: [ main ]
     tags:
       - 'v*'
   workflow_dispatch:
