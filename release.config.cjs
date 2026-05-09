@@ -17,11 +17,24 @@ module.exports = {
     ],
 
     [
+      "@semantic-release/exec",
+      {
+        prepareCmd: [
+          "npm version ${nextRelease.version} --no-git-tag-version",
+          "npm run version:update",
+          "npm run build",
+          "cd dist && zip -r ../qr-extension.zip . -x '*.DS_Store' -x '__MACOSX'"
+        ].join(" && ")
+      }
+    ],
+
+    [
       "@semantic-release/git",
       {
         assets: [
           "CHANGELOG.md",
           "package.json",
+          "package-lock.json",
           "public/manifest.json"
         ],
         message:

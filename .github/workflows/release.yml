@@ -28,20 +28,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Update manifest version
-        run: npm run version:update
-
-      - name: Build extension
-        run: npm run build
-
-      - name: Zip extension
-        run: |
-          cd dist
-          zip -r ../qr-extension.zip . \
-            -x "*.DS_Store" \
-            -x "__MACOSX"
-
       - name: Run semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release --branches test-workflow-2
+        run: npx semantic-release
