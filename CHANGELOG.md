@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Mirzaadr/extension-qr-url-generator/compare/v1.1.0...v1.1.1) (2026-05-09)
+
+
+### Bug Fixes
+
+* version doesn't update ([42a6cf9](https://github.com/Mirzaadr/extension-qr-url-generator/commit/42a6cf96e7d571b2b8bac862b51a3eb742466d83))
+
 # [1.1.0](https://github.com/Mirzaadr/extension-qr-url-generator/compare/v1.0.2...v1.1.0) (2026-05-09)
 
 
