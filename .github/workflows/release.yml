@@ -6,7 +6,7 @@ permissions:
 on:
   push:
     branches:
-      - test-workflow
+      - test-workflow-2
 
   workflow_dispatch:
 
