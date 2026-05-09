@@ -1,3 +1,6 @@
+/**
+ * @type {import('semantic-release').GlobalConfig}
+ */
 module.exports = {
   branches: ["test-workflow-2"],
 
