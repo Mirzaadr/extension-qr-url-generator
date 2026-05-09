@@ -26,6 +26,16 @@ module.exports = {
       }
     ],
 
-    "@semantic-release/github"
+    [
+      "@semantic-release/github",
+      {
+        assets: [
+          {
+            path: "qr-extension.zip",
+            label: "Browser Extension"
+          }
+        ]
+      }
+    ]
   ]
 };

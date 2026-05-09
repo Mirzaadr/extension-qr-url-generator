@@ -23,15 +23,10 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Install dependencies
         run: npm install
-
-      - name: Run semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
 
       - name: Update manifest version
         run: npm run version:update
@@ -46,7 +41,7 @@ jobs:
             -x "*.DS_Store" \
             -x "__MACOSX"
 
-      - name: Upload release asset
-        uses: softprops/action-gh-release@v2
-        with:
-          files: qr-extension.zip
+      - name: Run semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release
