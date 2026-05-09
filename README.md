@@ -82,6 +82,30 @@ qr-extension/
 
 ---
 
+## Commit Guidelines
+
+Semantic-release will automatically update the application version. so make sure to add these to the commit message.
+
+| Commit        | Result |
+| ------------- | ------ |
+| `fix:`        | patch  |
+| `feat:`       | minor  |
+| `feat!:`      | major  |
+
+Example:
+
+```bash
+feat: add dark mode
+fix: correct popup width
+```
+
+Result:
+```
+1.0.0 → 1.1.0
+```
+
+---
+
 ## ⚙️ Tech Stack
 
 * Vite
