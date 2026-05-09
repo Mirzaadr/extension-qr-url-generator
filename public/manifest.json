@@ -3,7 +3,10 @@
   "name": "QR URL Generator",
   "version": "1.0.2",
   "description": "Generate QR code for current page URL",
-  "permissions": ["tabs", "activeTab"],
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
   "browser_specific_settings": {
     "gecko": {
       "id": "qr-extension@mirzaadr",
