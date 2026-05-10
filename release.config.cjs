@@ -23,7 +23,7 @@ module.exports = {
           "npm version ${nextRelease.version} --no-git-tag-version",
           "npm run version:update",
           "npm run build",
-          "cd dist && zip -r ../qr-extension.zip . -x '*.DS_Store' -x '__MACOSX'",
+          "cd dist && zip -r ../qr-extension.zip . -x '*.DS_Store' -x '__MACOSX' && cd ..",
           "npx web-ext sign --channel=unlisted --source-dir=dist --artifacts-dir=web-ext-artifacts --api-key=$FIREFOX_API_KEY --api-secret=$FIREFOX_API_SECRET"
         ].join(" && ")
       }
